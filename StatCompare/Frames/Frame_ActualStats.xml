@@ -1,0 +1,697 @@
+<Ui xmlns="http://www.runewaker.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.runewaker.com/..\..\WorldXML\UI.xsd">
+
+	<Frame name="StatCompare_Frame_ActualStats" movable="false" enableMouse="false" hidden="false" parent="StatCompare_Frame_AnchorFrame" inherits="StatCompare_Frame">
+
+		<!-- ~~~~~~~~~~~~~~~~~ Anchor ~~~~~~~~~~~~~~~~~ -->
+		<Anchors>
+			<Anchor point="TOPLEFT" relativeTo="StatCompare_Frame_AnchorFrame" relativePoint="TOPLEFT">
+				<Offset>
+					<AbsDimension x="0" y="0" />
+				</Offset>
+			</Anchor>
+		</Anchors>
+
+		<!-- ~~~~~~~~~~~~~~~~~ Layers ~~~~~~~~~~~~~~~~~ -->
+		<Layers>
+			<Layer level="OVERLAY">
+
+				<!-- ~~~~~~~~~~~ Headline ~~~~~~~~~~~ -->
+				<FontString name="ActualStats_Value_Name" parent="StatCompare_Frame_ActualStats" inherits="Template_Title">
+					<Anchors>
+						<Anchor point="CENTER" relativeTo="StatCompare_Frame_ActualStats" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="350" y="14" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+
+				<!-- ~~~~~~~~~~~ Attributes ~~~~~~~~~~~ -->
+				<FontString name="ActualStats_SubTitle_Attributes" parent="StatCompare_Frame_ActualStats" inherits="Template_SubTitle">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="StatCompare_Frame_ActualStats" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="23" y="45" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Strength" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_STR">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_SubTitle_Attributes" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="5" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Strength" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Strength" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Agility" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_AGI">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Strength" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Agility" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Agility" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Stamina" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_STA">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Agility" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Stamina" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Stamina" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Intelligence" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_INT">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Stamina" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Intelligence" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Intelligence" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Mind" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_MND">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Intelligence" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Mind" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Mind" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+
+				<!-- ~~~~~~~~~~~ Fight ~~~~~~~~~~~ -->
+				<FontString name="ActualStats_SubTitle_Fight" parent="StatCompare_Frame_ActualStats" inherits="Template_SubTitle" text="MESSAGE_FIGHT">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Mind" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="-5" y="10" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Dps" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_DPS">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_SubTitle_Fight" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="5" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Dps" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Dps" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+
+				<!-- ~~~~~~~~~~~ Physical fight ~~~~~~~~~~~ -->
+				<FontString name="ActualStats_SubTitle_Melee" parent="StatCompare_Frame_ActualStats" inherits="Template_SubTitle" text="MELEE">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Dps" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="-5" y="10" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Melee_Damage" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_PHYSICAL_DAMAGE">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_SubTitle_Melee" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="5" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Melee_Damage" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Melee_Damage" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Melee_Attack" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_PHYSICAL_ATTACK">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Melee_Damage" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Melee_Attack" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Melee_Attack" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Melee_Critical" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_PHYSICAL_CRITICAL">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Melee_Attack" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Melee_Critical" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Melee_Critical" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Melee_Hit" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_PHYSICAL_HIT">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Melee_Critical" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Melee_Hit" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Melee_Hit" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+
+				<!-- ~~~~~~~~~~~ Range fight ~~~~~~~~~~~ -->
+				<FontString name="ActualStats_SubTitle_Range" parent="StatCompare_Frame_ActualStats" inherits="Template_SubTitle" text="RANGE">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Melee_Hit" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="-5" y="10" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Range_Damage" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_PHYSICAL_DAMAGE">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_SubTitle_Range" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="5" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Range_Damage" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Range_Damage" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Range_Attack" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_PHYSICAL_ATTACK">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Range_Damage" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Range_Attack" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Range_Attack" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Range_Critical" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_PHYSICAL_CRITICAL">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Range_Attack" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Range_Critical" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Range_Critical" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Range_Hit" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_PHYSICAL_HIT">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Range_Critical" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Range_Hit" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Range_Hit" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+
+				<!-- ~~~~~~~~~~~ Magical fight ~~~~~~~~~~~ -->
+				<FontString name="ActualStats_SubTitle_Magical" parent="StatCompare_Frame_ActualStats" inherits="Template_SubTitle" text="MAGIC">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Range_Hit" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="-5" y="10" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Magical_Damage" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_MAGIC_DAMAGE">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_SubTitle_Magical" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="5" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Magical_Damage" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Magical_Damage" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Magical_Attack" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_MAGIC_ATTACK">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Magical_Damage" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Magical_Attack" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Magical_Attack" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Magical_Critical" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_MAGIC_CRITICAL">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Magical_Attack" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Magical_Critical" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Magical_Critical" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Magical_Heal" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_MAGIC_HEAL_POINT">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Magical_Critical" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Magical_Heal" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Magical_Heal" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Magical_Hit" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_MAGIC_HIT">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Magical_Heal" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Magical_Hit" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Magical_Hit" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+
+				<!-- ~~~~~~~~~~~ Physical defense ~~~~~~~~~~~ -->
+				<FontString name="ActualStats_SubTitle_Physical_Defense" parent="StatCompare_Frame_ActualStats" inherits="Template_SubTitle" text="PHYSICAL_DEFENCE">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Magical_Hit" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="-5" y="10" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Physical_Defense" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_PHYSICAL_DEFENCE">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_SubTitle_Physical_Defense" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="5" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Physical_Defense" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Physical_Defense" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Physical_Parry" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_PHYSICAL_PARRY">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Physical_Defense" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Physical_Parry" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Physical_Parry" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Physical_Dodge" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_PHYSICAL_DODGE">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Physical_Parry" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Physical_Dodge" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Physical_Dodge" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Physical_Critical" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_PHYSICAL_RESIST_CRITICAL">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Physical_Dodge" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Physical_Critical" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Physical_Critical" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+
+				<!-- ~~~~~~~~~~~ Magical defense ~~~~~~~~~~~ -->
+				<FontString name="ActualStats_SubTitle_Magical_Defense" parent="StatCompare_Frame_ActualStats" inherits="Template_SubTitle" text="MAGIC_DEFENCE">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Physical_Critical" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="-5" y="10" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Magical_Defense" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_MAGIC_DEFENCE">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_SubTitle_Magical_Defense" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="5" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Magical_Defense" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Magical_Defense" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Magical_Dodge" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_MAGIC_DODGE">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Magical_Defense" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Magical_Dodge" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Magical_Dodge" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Magical_Resist_Critical" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_MAGIC_RESIST_CRITICAL">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Magical_Dodge" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Magical_Resist_Critical" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Magical_Resist_Critical" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="195" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+
+				<!-- ~~~~~~~~~~~ Resistances ~~~~~~~~~~~ -->
+				<FontString name="ActualStats_SubTitle_Resistances" parent="StatCompare_Frame_ActualStats" inherits="Template_SubTitle">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="StatCompare_Frame_ActualStats" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="368" y="455" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Resistance_Earth" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_EARTH">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_SubTitle_Resistances" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="5" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Resistance_Earth" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Resistance_Earth" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="110" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Resistance_Water" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_WATER">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Resistance_Earth" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Resistance_Water" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Resistance_Water" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="110" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Resistance_Fire" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_FIRE">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Resistance_Water" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Resistance_Fire" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Resistance_Fire" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="110" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Resistance_Wind" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_WIND">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Resistance_Fire" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Resistance_Wind" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Resistance_Wind" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="110" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Resistance_Light" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_LIGHT">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Resistance_Wind" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Resistance_Light" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Resistance_Light" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="110" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Label_Resistance_Dark" parent="StatCompare_Frame_ActualStats" inherits="Template_Label" text="C_DARK">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualStats_Label_Resistance_Light" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualStats_Value_Resistance_Dark" parent="StatCompare_Frame_ActualStats" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualStats_Label_Resistance_Dark" relativePoint="TOPLEFT">
+							<Offset>
+								<AbsDimension x="110" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+
+		</Layers>
+	</Frame>
+
+</Ui>

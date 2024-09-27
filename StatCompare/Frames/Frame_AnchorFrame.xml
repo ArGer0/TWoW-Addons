@@ -1,0 +1,134 @@
+<Ui xmlns="http://www.runewaker.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.runewaker.com/..\..\WorldXML\UI.xsd">
+
+	<Frame name="StatCompare_Frame_AnchorFrame" inherits="UIPanelBackdropFrame" movable="true" enableMouse="true" frameStrata="MEDIUM" hidden="true" parent="CharacterFrame">
+
+		<!-- ~~~~~~~~~~~~~~~~~ Dimension ~~~~~~~~~~~~~~~~~ -->
+		<Size>
+			<AbsDimension x="700" y="580" />
+		</Size>
+
+		<!-- ~~~~~~~~~~~~~~~~~ Anchor (will be overwritten with config values) ~~~~~~~~~~~~~~~~~ -->
+		<Anchors></Anchors>
+
+		<Frames>
+
+			<!-- ~~~~~~~~~~~~~~~~~ SubFrame for border for hooked frames ~~~~~~~~~~~~~~~~~ -->
+			<Frame name="StatCompare_SubFrame_BorderHooked" inherits="StatCompare_Backdrop_Frame">
+				<Size>
+					<AbsDimension x="310" y="400" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativeTo="StatCompare_Frame_AnchorFrame" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-35" y="30" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Frame>
+
+			<!-- ~~~~~~~~~~~~~~~~~ SubFrame for border for actual stats ~~~~~~~~~~~~~~~~~ -->
+			<Frame name="StatCompare_SubFrame_BorderActualStatsC" inherits="StatCompare_Backdrop_Frame">
+				<Size>
+					<AbsDimension x="230" y="540" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="StatCompare_Frame_AnchorFrame" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="12" y="30" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Frame>
+			<Frame name="StatCompare_SubFrame_BorderActualStatsR" inherits="StatCompare_Backdrop_Frame">
+				<Size>
+					<AbsDimension x="150" y="135" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="StatCompare_Frame_AnchorFrame" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="355" y="435" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Frame>
+
+			<!-- ~~~~~~~~~~~~~~~~~ SubFrame for border for compared stats ~~~~~~~~~~~~~~~~~ -->
+			<Frame name="StatCompare_SubFrame_BorderComparedStatsC" inherits="StatCompare_Backdrop_Frame">
+				<Size>
+					<AbsDimension x="105" y="540" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="StatCompare_Frame_AnchorFrame" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="246" y="30" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Frame>
+			<Frame name="StatCompare_SubFrame_BorderComparedStatsR" inherits="StatCompare_Backdrop_Frame">
+				<Size>
+					<AbsDimension x="90" y="135" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="StatCompare_Frame_AnchorFrame" relativePoint="TOPLEFT">
+						<Offset>
+							<AbsDimension x="509" y="435" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Frame>
+
+			<!-- ~~~~~~~~~~~~~~~~~ Buttons for handling the compare actions ~~~~~~~~~~~~~~~~~ -->
+			<Button name="StatCompare_Button_ToggleCompare" parent="StatCompare_Frame_AnchorFrame" inherits="StatCompare_Button" visible="true" text="">
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativeTo="StatCompare_Frame_AnchorFrame" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-8" y="445" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button name="StatCompare_Button_ResetComparePoint" parent="StatCompare_Frame_AnchorFrame" inherits="StatCompare_Button" visible="false" text="">
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativeTo="StatCompare_Frame_AnchorFrame" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-8" y="475" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+		</Frames>
+
+		<Layers>
+			<Layer>
+
+				<!-- ~~~~~~~~~~~~~~~~~ The StatCompare logo ~~~~~~~~~~~~~~~~~ -->
+				<Texture file="Interface/Addons/StatCompare/Images/StatCompare_Logo.tga">
+					<Size>
+						<AbsDimension x="32" y="32" />
+					</Size>
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="StatCompare_Frame_AnchorFrame" relativePoint="TOPRIGHT">
+							<Offset>
+								<AbsDimension x="-15" y="545" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+
+		<!-- ~~~~~~~~~~~~~~~~~ Script references ~~~~~~~~~~~~~~~~~ -->
+		<Scripts>
+			<OnLoad>UIPanelBackdropFrame_SetTexture(this, "Interface/Common/PanelCommonFrame", 256, 256);</OnLoad>
+			<OnMouseDown>if (this.nodeAnchor ~= nil and this.nodeAnchor.onMouseDown ~= nil) then this.nodeAnchor:onMouseDown(key); end;</OnMouseDown>
+			<OnMouseUp>if (this.nodeAnchor ~= nil and this.nodeAnchor.onMouseUp ~= nil) then this.nodeAnchor:onMouseUp(); end;</OnMouseUp>
+			<OnDragStop>if (this.nodeAnchor ~= nil and this.nodeAnchor.onDragStop ~= nil) then this.nodeAnchor:onDragStop(); end;</OnDragStop>
+			<OnShow>if (this.nodeAnchor ~= nil and this.nodeAnchor.onShow ~= nil) then this.nodeAnchor:onShow(); end;</OnShow>
+			<OnHide>if (this.nodeAnchor ~= nil and this.nodeAnchor.onHide ~= nil) then this.nodeAnchor:onHide(); end;</OnHide>
+			<OnUpdate>if (this.nodeAnchor ~= nil and this.nodeAnchor.onUpdate ~= nil) then this.nodeAnchor:onUpdate(); end;</OnUpdate>
+		</Scripts>
+
+	</Frame>
+
+</Ui>

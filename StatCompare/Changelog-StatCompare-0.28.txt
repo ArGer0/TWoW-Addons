@@ -1,0 +1,236 @@
+------------------------------------------------------------------------
+r28 | firebirdsr | 2010-02-26 20:19:22 +0000 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   A /tags/0.28 (from /trunk:27)
+
+Tagging as 0.28 and release it
+------------------------------------------------------------------------
+r27 | firebirdsr | 2010-02-26 20:10:32 +0000 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   A /trunk/Scripts/Locales/lang_FR.lua
+
+added french locale (Thanks to Steampump)
+------------------------------------------------------------------------
+r26 | firebirdsr | 2010-02-22 14:50:26 +0000 (Mon, 22 Feb 2010) | 1 line
+Changed paths:
+   A /trunk/Scripts/Locales/lang_ENEU.lua
+
+#6 Added a locale for eneu
+------------------------------------------------------------------------
+r24 | firebirdsr | 2010-02-09 20:42:38 +0000 (Tue, 09 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/Scripts/Locales/lang_EN.lua
+   A /trunk/Scripts/Locales/lang_ENUS.lua
+
+fixed error in english locales
+------------------------------------------------------------------------
+r22 | firebirdsr | 2010-02-08 16:04:19 +0000 (Mon, 08 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/Scripts/Utilities/LogUtils.lua
+
+disable debug messages
+------------------------------------------------------------------------
+r21 | firebirdsr | 2010-02-08 16:01:44 +0000 (Mon, 08 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/Scripts/Character/StatCompare_CharacterValueInt.lua
+   M /trunk/Scripts/Locales/lang_DE.lua
+   M /trunk/Scripts/Locales/lang_EN.lua
+   M /trunk/Scripts/Main/StatCompare_Config.lua
+   M /trunk/Scripts/Main/StatCompare_Locale.lua
+   D /trunk/Scripts/Main/StatCompare_Namespace.lua
+   M /trunk/Scripts/Main/StatCompare_UpdateHandler.lua
+   M /trunk/Scripts/Nodes/Node_Activity.lua
+   M /trunk/Scripts/Nodes/Node_ActualClasses.lua
+   M /trunk/Scripts/Nodes/Node_ActualStats.lua
+   M /trunk/Scripts/Nodes/Node_Addonmanager.lua
+   M /trunk/Scripts/Nodes/Node_AnchorFrame.lua
+   M /trunk/Scripts/Nodes/Node_Character.lua
+   M /trunk/Scripts/Nodes/Node_ComparedStats.lua
+   M /trunk/Scripts/Nodes/Node_ResetComparePoint.lua
+   M /trunk/Scripts/Nodes/Node_SavedStats.lua
+   M /trunk/Scripts/Nodes/Node_SlashCommands.lua
+   M /trunk/Scripts/Nodes/Node_ToggleCompare.lua
+   M /trunk/Scripts/Nodes/StatCompare_Nodes.lua
+   M /trunk/Scripts/StatCompare_General.lua
+   A /trunk/Scripts/StatCompare_Namespace.lua (from /trunk/Scripts/Main/StatCompare_Namespace.lua:12)
+   M /trunk/Scripts/Utilities/FileUtils.lua
+   M /trunk/Scripts/Utilities/GuiUtils.lua
+   M /trunk/Scripts/Utilities/LogUtils.lua
+   M /trunk/Scripts/Utilities/OrderedTable.lua
+   M /trunk/Scripts/Utilities/TextUtils.lua
+   M /trunk/StatCompare.toc
+
+moving namespaces for better interoparability with other addons
+------------------------------------------------------------------------
+r20 | firebirdsr | 2010-02-08 10:55:13 +0000 (Mon, 08 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/Frames/Frame_ActualClasses.xml
+   M /trunk/Scripts/Locales/lang_DE.lua
+   M /trunk/Scripts/Locales/lang_EN.lua
+   M /trunk/Scripts/Nodes/Node_ActualClasses.lua
+   M /trunk/Scripts/Nodes/Node_Character.lua
+
+Added reputation and honor points to the frame below the equipment
+------------------------------------------------------------------------
+r19 | firebirdsr | 2010-02-08 08:42:41 +0000 (Mon, 08 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/Scripts/Character/StatCompare_CharacterResistance.lua
+   M /trunk/Scripts/Nodes/Node_ActualStats.lua
+
+Fixed that the resistances were not shown
+------------------------------------------------------------------------
+r17 | firebirdsr | 2010-02-07 15:13:19 +0000 (Sun, 07 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/Scripts/Main/StatCompare_Config.lua
+   M /trunk/Scripts/Nodes/Node_Activity.lua
+   M /trunk/Scripts/Nodes/Node_ActualClasses.lua
+   M /trunk/Scripts/Nodes/Node_ActualStats.lua
+   M /trunk/Scripts/Nodes/Node_Addonmanager.lua
+   M /trunk/Scripts/Nodes/Node_AnchorFrame.lua
+   M /trunk/Scripts/Nodes/Node_Character.lua
+   M /trunk/Scripts/Nodes/Node_ComparedStats.lua
+   M /trunk/Scripts/Nodes/Node_ResetComparePoint.lua
+   M /trunk/Scripts/Nodes/Node_SavedStats.lua
+   M /trunk/Scripts/Nodes/Node_SlashCommands.lua
+   M /trunk/Scripts/Nodes/Node_ToggleCompare.lua
+   M /trunk/Scripts/Nodes/StatCompare_Nodes.lua
+   M /trunk/Scripts/StatCompare_General.lua
+   M /trunk/Scripts/Utilities/LogUtils.lua
+
+debug messages use a different method to have no influence on statrating addon
+------------------------------------------------------------------------
+r16 | firebirdsr | 2010-02-07 14:43:56 +0000 (Sun, 07 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/.build/BuildAndCopy.xml
+   M /trunk/Scripts/Nodes/Node_AnchorFrame.lua
+
+anchor frame should now movable without holding the shift key
+------------------------------------------------------------------------
+r14 | firebirdsr | 2010-02-06 15:31:36 +0000 (Sat, 06 Feb 2010) | 1 line
+Changed paths:
+   A /trunk/.docmeta
+
+Trying to generate api documentation with packager
+------------------------------------------------------------------------
+r13 | firebirdsr | 2010-02-06 15:26:59 +0000 (Sat, 06 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/Scripts/Main/StatCompare_Identifier.lua
+
+Trying to replace project version by packager
+------------------------------------------------------------------------
+r12 | firebirdsr | 2010-02-05 20:02:57 +0000 (Fri, 05 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/.build/BuildAndCopy.xml
+   A /trunk/Frames (from /trunk/StatCompare/Frames:11)
+   A /trunk/Images (from /trunk/StatCompare/Images:11)
+   A /trunk/Scripts (from /trunk/StatCompare/Scripts:11)
+   D /trunk/StatCompare
+   A /trunk/StatCompare.toc (from /trunk/StatCompare/StatCompare.toc:11)
+
+corrected directory structure for packaging
+------------------------------------------------------------------------
+r11 | firebirdsr | 2010-02-05 19:50:35 +0000 (Fri, 05 Feb 2010) | 1 line
+Changed paths:
+   A /trunk/.build
+   A /trunk/.build/BuildAndCopy.xml
+   A /trunk/.pkgmeta
+   A /trunk/.project
+   A /trunk/.settings
+   A /trunk/.settings/org.eclipse.wst.validation.prefs
+   A /trunk/StatCompare
+   A /trunk/StatCompare/Frames
+   A /trunk/StatCompare/Frames/Frame_ActualClasses.xml
+   A /trunk/StatCompare/Frames/Frame_ActualStats.xml
+   A /trunk/StatCompare/Frames/Frame_AnchorFrame.xml
+   A /trunk/StatCompare/Frames/Frame_ComparedStats.xml
+   A /trunk/StatCompare/Frames/Frame_General.xml
+   A /trunk/StatCompare/Frames/Frame_SavedStats.xml
+   A /trunk/StatCompare/Frames/Templates.xml
+   A /trunk/StatCompare/Images
+   A /trunk/StatCompare/Images/StatCompare_Logo.tga
+   A /trunk/StatCompare/Scripts
+   A /trunk/StatCompare/Scripts/Character
+   A /trunk/StatCompare/Scripts/Character/StatCompare_CharacterAbility.lua
+   A /trunk/StatCompare/Scripts/Character/StatCompare_CharacterIdentifier.lua
+   A /trunk/StatCompare/Scripts/Character/StatCompare_CharacterResistance.lua
+   A /trunk/StatCompare/Scripts/Character/StatCompare_CharacterValueInt.lua
+   A /trunk/StatCompare/Scripts/Character/StatCompare_CharacterValueText.lua
+   A /trunk/StatCompare/Scripts/Character/StatCompare_Namespace.lua
+   A /trunk/StatCompare/Scripts/Locales
+   A /trunk/StatCompare/Scripts/Locales/lang_DE.lua
+   A /trunk/StatCompare/Scripts/Locales/lang_EN.lua
+   A /trunk/StatCompare/Scripts/Main
+   A /trunk/StatCompare/Scripts/Main/StatCompare_Config.lua
+   A /trunk/StatCompare/Scripts/Main/StatCompare_Identifier.lua
+   A /trunk/StatCompare/Scripts/Main/StatCompare_Locale.lua
+   A /trunk/StatCompare/Scripts/Main/StatCompare_Namespace.lua
+   A /trunk/StatCompare/Scripts/Main/StatCompare_UpdateHandler.lua
+   A /trunk/StatCompare/Scripts/Nodes
+   A /trunk/StatCompare/Scripts/Nodes/Node_Activity.lua
+   A /trunk/StatCompare/Scripts/Nodes/Node_ActualClasses.lua
+   A /trunk/StatCompare/Scripts/Nodes/Node_ActualStats.lua
+   A /trunk/StatCompare/Scripts/Nodes/Node_Addonmanager.lua
+   A /trunk/StatCompare/Scripts/Nodes/Node_AnchorFrame.lua
+   A /trunk/StatCompare/Scripts/Nodes/Node_Character.lua
+   A /trunk/StatCompare/Scripts/Nodes/Node_ComparedStats.lua
+   A /trunk/StatCompare/Scripts/Nodes/Node_ResetComparePoint.lua
+   A /trunk/StatCompare/Scripts/Nodes/Node_SavedStats.lua
+   A /trunk/StatCompare/Scripts/Nodes/Node_SlashCommands.lua
+   A /trunk/StatCompare/Scripts/Nodes/Node_ToggleCompare.lua
+   A /trunk/StatCompare/Scripts/Nodes/StatCompare_Nodes.lua
+   A /trunk/StatCompare/Scripts/StatCompare_General.lua
+   A /trunk/StatCompare/Scripts/Utilities
+   A /trunk/StatCompare/Scripts/Utilities/FileUtils.lua
+   A /trunk/StatCompare/Scripts/Utilities/GuiUtils.lua
+   A /trunk/StatCompare/Scripts/Utilities/LogUtils.lua
+   A /trunk/StatCompare/Scripts/Utilities/OrderedTable.lua
+   A /trunk/StatCompare/Scripts/Utilities/TextUtils.lua
+   A /trunk/StatCompare/StatCompare.toc
+
+Initial Commit
+------------------------------------------------------------------------
+r10 | firebirdsr | 2010-02-05 19:41:32 +0000 (Fri, 05 Feb 2010) | 1 line
+Changed paths:
+   D /trunk/StatCompare
+
+delete because of wrong project structure
+------------------------------------------------------------------------
+r9 | firebirdsr | 2010-02-04 21:26:04 +0000 (Thu, 04 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/StatCompare/.pkgmeta
+
+playing with pkgmeta
+------------------------------------------------------------------------
+r8 | firebirdsr | 2010-02-04 21:21:33 +0000 (Thu, 04 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/StatCompare/.pkgmeta
+
+playing with pkgmeta
+------------------------------------------------------------------------
+r7 | firebirdsr | 2010-02-04 21:18:51 +0000 (Thu, 04 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/StatCompare/.pkgmeta
+
+playing with pkgmeta
+------------------------------------------------------------------------
+r6 | firebirdsr | 2010-02-04 21:17:02 +0000 (Thu, 04 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/StatCompare/.pkgmeta
+
+playing with pkgmeta
+------------------------------------------------------------------------
+r5 | firebirdsr | 2010-02-04 21:10:21 +0000 (Thu, 04 Feb 2010) | 1 line
+Changed paths:
+   D /StatCompare
+   A /trunk/StatCompare (from /StatCompare:4)
+
+Moving to trunk
+------------------------------------------------------------------------
+r1 | root | 2010-02-04 20:27:28 +0000 (Thu, 04 Feb 2010) | 1 line
+Changed paths:
+   A /branches
+   A /tags
+   A /trunk
+
+"statcompare/mainline: Initial Import"
+------------------------------------------------------------------------

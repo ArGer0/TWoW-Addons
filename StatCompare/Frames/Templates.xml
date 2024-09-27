@@ -1,0 +1,61 @@
+<Ui xmlns="http://www.runewaker.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.runewaker.com/..\..\WorldXML\UI.xsd">
+
+	<FontString name="Template_Title" inherits="GameTitleFont" virtual="true" justifyH="CENTER">
+		<Color r="0.9" g="0.9" b="0.9" a="1.0" />
+		<FontHeight>
+			<AbsValue val="14" />
+		</FontHeight>
+	</FontString>
+
+	<FontString name="Template_SubTitle" inherits="GameTitleFont" virtual="true" justifyH="LEFT">
+		<Color r="0.2" g="1.0" b="0.2" a="1.0" />
+		<FontHeight>
+			<AbsValue val="12" />
+		</FontHeight>
+	</FontString>
+
+	<FontString name="Template_Label" inherits="GameTitleFont" virtual="true" justifyH="LEFT">
+		<Color r="0.7" g="0.6" b="0.2" a="1.0" />
+		<FontHeight>
+			<AbsValue val="12" />
+		</FontHeight>
+	</FontString>
+
+	<FontString name="Template_Value" inherits="GameTitleFont" virtual="true" justifyH="RIGHT">
+		<Color r="1.0" g="1.0" b="1.0" a="1.0" />
+		<FontHeight>
+			<AbsValue val="12" />
+		</FontHeight>
+	</FontString>
+
+	<Frame name="StatCompare_Frame" virtual="true">
+		<Scripts>
+			<OnMouseDown>if (this.nodeAnchor ~= nil and this.nodeAnchor.onMouseDown ~= nil) then this.nodeAnchor:onMouseDown(key); end;</OnMouseDown>
+			<OnMouseUp>if (this.nodeAnchor ~= nil and this.nodeAnchor.onMouseUp ~= nil) then this.nodeAnchor:onMouseUp(); end;</OnMouseUp>
+			<OnDragStop>if (this.nodeAnchor ~= nil and this.nodeAnchor.onDragStop ~= nil) then this.nodeAnchor:onDragStop(); end;</OnDragStop>
+			<OnShow>if (this.nodeAnchor ~= nil and this.nodeAnchor.onShow ~= nil) then this.nodeAnchor:onShow(); end;</OnShow>
+			<OnHide>if (this.nodeAnchor ~= nil and this.nodeAnchor.onHide ~= nil) then this.nodeAnchor:onHide(); end;</OnHide>
+			<OnUpdate>if (this.nodeAnchor ~= nil and this.nodeAnchor.onUpdate ~= nil) then this.nodeAnchor:onUpdate(); end;</OnUpdate>
+		</Scripts>
+	</Frame>
+
+	<Frame name="StatCompare_Backdrop_Frame" virtual="true" inherits="UIPanelBackdropFrame">
+		<Scripts>
+			<OnLoad>UIPanelBackdropFrame_SetTexture(this, "Interface/Common/PanelCommonBorder", 40, 40);</OnLoad>
+		</Scripts>
+	</Frame>
+
+	<Button name="StatCompare_Button" inherits="UIPanelButtonTemplate" virtual="true">
+		<Size>
+			<AbsDimension x="90" y="24" />
+		</Size>
+		<Scripts>
+			<OnMouseDown>if (this.nodeAnchor ~= nil and this.nodeAnchor.onMouseDown ~= nil) then this.nodeAnchor:onMouseDown(key); end;</OnMouseDown>
+			<OnMouseUp>if (this.nodeAnchor ~= nil and this.nodeAnchor.onMouseUp ~= nil) then this.nodeAnchor:onMouseUp(); end;</OnMouseUp>
+			<OnClick>if (this.nodeAnchor ~= nil and this.nodeAnchor.onClick ~= nil) then this.nodeAnchor:onClick(); end;</OnClick>
+			<OnEnter>if (this.nodeAnchor ~= nil and this.nodeAnchor.onEnter ~= nil) then this.nodeAnchor:onEnter(); end;</OnEnter>
+			<OnLeave>if (this.nodeAnchor ~= nil and this.nodeAnchor.onLeave ~= nil) then this.nodeAnchor:onLeave(); end;</OnLeave>
+		</Scripts>
+	</Button>
+</Ui>
+

@@ -1,0 +1,87 @@
+<Ui xmlns="http://www.runewaker.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.runewaker.com/..\..\WorldXML\UI.xsd">
+
+	<Frame name="StatCompare_Frame_ActualClasses" movable="false" enableMouse="false" hidden="true" parent="EquipmentFrame" inherits="StatCompare_Frame">
+
+		<!-- ~~~~~~~~~~~~~~~~~ Dimension ~~~~~~~~~~~~~~~~~ -->
+		<Size>
+			<AbsDimension x="240" y="100" />
+		</Size>
+
+		<!-- ~~~~~~~~~~~~~~~~~ Anchor ~~~~~~~~~~~~~~~~~ -->
+		<Anchors>
+			<Anchor point="TOPLEFT" relativeTo="IntroductionFrame" relativePoint="TOPLEFT">
+				<Offset><AbsDimension x="20" y="8" /></Offset>
+			</Anchor>
+		</Anchors>
+
+		<!-- ~~~~~~~~~~~~~~~~~ Layers ~~~~~~~~~~~~~~~~~ -->
+		<Layers>
+			<Layer level="OVERLAY">
+
+				<!-- ~~~~~~~~~~~ Character classes ~~~~~~~~~~~ -->
+				<FontString name="ActualClasses_Label_MainClass" parent="StatCompare_Frame_ActualClasses" inherits="Template_Label" text="SOCIAL_DETAIL_CLASS1_COLON">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="StatCompare_Frame_ActualClasses" relativePoint="TOPLEFT">
+							<Offset><AbsDimension x="0" y="10" /></Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualClasses_Value_MainClass" parent="StatCompare_Frame_ActualClasses" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualClasses_Label_MainClass" relativePoint="TOPLEFT">
+							<Offset><AbsDimension x="220" y="0" /></Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualClasses_Label_SecondClass" parent="StatCompare_Frame_ActualClasses" inherits="Template_Label" text="SOCIAL_DETAIL_CLASS2_COLON">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualClasses_Label_MainClass" relativePoint="BOTTOMLEFT">
+							<Offset><AbsDimension x="0" y="2" /></Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualClasses_Value_SecondClass" parent="StatCompare_Frame_ActualClasses" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualClasses_Label_SecondClass" relativePoint="TOPLEFT">
+							<Offset><AbsDimension x="220" y="0" /></Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+
+				<!-- ~~~~~~~~~~~ Reputation ~~~~~~~~~~~ -->
+				<FontString name="ActualClasses_Label_Reputation" parent="StatCompare_Frame_ActualClasses" inherits="Template_Label" text="C_GOODEVIL">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualClasses_Label_SecondClass" relativePoint="BOTTOMLEFT">
+							<Offset><AbsDimension x="0" y="12" /></Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualClasses_Value_Reputation" parent="StatCompare_Frame_ActualClasses" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualClasses_Label_Reputation" relativePoint="TOPLEFT">
+							<Offset><AbsDimension x="220" y="0" /></Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+
+				<!-- ~~~~~~~~~~~ Seelenpunkte ~~~~~~~~~~~ -->
+				<FontString name="ActualClasses_Label_Honor" parent="StatCompare_Frame_ActualClasses" inherits="Template_Label" text="C_HONOR">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="ActualClasses_Label_Reputation" relativePoint="BOTTOMLEFT">
+							<Offset><AbsDimension x="0" y="2" /></Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="ActualClasses_Value_Honor" parent="StatCompare_Frame_ActualClasses" inherits="Template_Value">
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeTo="ActualClasses_Label_Honor" relativePoint="TOPLEFT">
+							<Offset><AbsDimension x="220" y="0" /></Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+
+			</Layer>
+		</Layers>
+	</Frame>
+
+</Ui>				

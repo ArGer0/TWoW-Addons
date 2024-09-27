@@ -1,0 +1,13 @@
+<Ui xmlns="http://www.runewaker.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.runewaker.com/..\..\WorldXML\UI.xsd">
+
+	<Script file="StatCompare_General.lua" />
+
+	<Frame name="StatCompare_Frame_General" hidden="false">
+		<Scripts>
+			<OnEvent>statcompare:onEvent(this, event, arg1, arg2);</OnEvent>
+			<OnLoad>statcompare:onLoad(this);</OnLoad>
+			<OnUpdate>statcompare:onUpdate(this);</OnUpdate>
+		</Scripts>
+	</Frame>
+
+</Ui>
